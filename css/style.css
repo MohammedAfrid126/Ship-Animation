@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow: hidden;
+}
+
+.luffy{
+    height: 50px;
+    width: 35px;
+    scale: 0.7;
+    background-image: url('../img/Luffy/1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 57vh;
+    bottom:22vh;
+    z-index: 4;
+    animation: shakeShip linear 2s infinite;
+
+}
+
+.sky{
+    height: 100vh;
+    width: 400vh;
+    background-image: url('../img/sky/1.png');
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: skyMove linear 30s infinite;
+}
+
+.wave1{
+    height: 80vh;
+    width: 800vw;
+    background-image: url('../img/waves/weave1.png');
+    background-repeat: repeat-x;
+    transform: translateX(-200px);
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    z-index: 2;
+    animation: waveMove linear 25s infinite;
+}
+.wave2{
+    height: 80vh;
+    width: 800vw;
+    background-image: url('../img/waves/weave2.png');
+    background-repeat: repeat-x;
+    transform: translateX(-100px);
+    position: absolute;
+    top: 30vh;
+    left: 0;
+    z-index: 3;
+    animation: waveMove linear 18s infinite;
+}
+
+.ship{
+    height: 400px;
+    width: 667px;
+    scale: 0.7;
+    background-image: url('../img/ship/3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 10vh;
+    bottom:5vh;
+    z-index: 5;
+    animation: shakeShip linear 2s infinite;
+}
+
+@keyframes waveMove
+{
+    100%{
+        transform: translateX(-400vw);
+    }
+}
+
+@keyframes skyMove{
+    100%{
+        transform: translateX(-100vh);
+    }
+}
+
+@keyframes shakeShip{
+    0%{
+        transform: translateY(15px);
+    }
+    25%{
+        transform: translateY(-15px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    75%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translateY(15px);
+    }
+}
