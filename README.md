@@ -13,6 +13,5 @@ Animation created using HTML and CSS.
 
 https://mohammedafrid126.github.io/Ship-Animation/
 
-
 ## Tech Stack
 HTML, CSS and JS.
